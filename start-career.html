@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>ДиПОС</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="stylesheets/common.css">
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="box">
+            <div class="header__group"> <a class="logo header__logo" href="home.html">
+                    <picture class="logo__image picture">
+                        <source srcset="images/logo/logo.svg" media="(min-width: 768px)">
+                        <source srcset="images/logo/logo@mobile.svg" media="(max-width: 767px)"><img class="picture__image" src="images/logo/logo.svg" alt="ДиПОС">
+                    </picture><span class="logo__name">ДиПОС</span>
+                </a><!--END .logo-->
+                <nav class="nav header__nav"><button class="button-burger js-button-burger nav__burger" type="button"><span class="button-burger__item"></span></button><!-- END .button-burger-->
+                    <div class="nav__group">
+                        <ul class="nav__list js-nav-list">
+                            <li class="nav__item nav__item--main">
+                                <a class="nav__link" href="#">Вакансии</a>
+                            </li>
+                            <li class="nav__item nav__item--main">
+                                <a class="nav__link" href="#">О компании</a>
+                            </li>
+                            <li class="nav__item nav__item--main">
+                                <a class="nav__link" href="#">Офис</a>
+                            </li>
+                            <li class="nav__item nav__item--main">
+                                <a class="nav__link" href="#">Производство</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Логистика</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Начало карьеры</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Контакты</a>
+                            </li>
+                            <li class="nav__item nav__item--more">
+                                <span class="nav__link nav__link--has-submenu">Еще
+                                    <svg class="icon icon--stroke nav__icon-dropdown" width="24" height="24">
+                                        <use xlink:href="images/svg-sprite.svg#arrow-dropdown"></use>
+                                    </svg><!--END .icon--></span>
+                                <div class="nav__subnav">
+                                    <ul class="nav__sublist">
+                                        <li class="nav__subitem"><a class="nav__sublink" href="#33">Начало карьеры</a></li>
+                                        <li class="nav__subitem"><a class="nav__sublink" href="#33">Контакты</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav><!--END .nav-->
+                <div class="city header__city js-header-city">
+                    <div class="city__cover"></div>
+                    <div class="city__actual js-city-actual"><span class="city__actual-name">Екатеринбург</span>
+                        <svg class="icon icon--fill city__actual-pin" width="24" height="24">
+                            <use xlink:href="images/svg-sprite.svg#pin-thin"></use>
+                        </svg><!--END .icon-->
+                    </div>
+                    <div class="city__select">
+                        <div class="city__mobile-close"><span></span></div>
+                        <h6 class="city__title">Укажите ваш город</h6>
+                        <button class="ctrl-button js-close-city-select ctrl-button--icon-only city__close" type="button">
+                            <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                <svg class="icon icon--fill ctrl-button__icon" width="24" height="24">
+                                    <use xlink:href="images/svg-sprite.svg#close"></use>
+                                </svg><!--END .icon--></span>
+                        </button><!--END .ctrl-button -->
+                        <ul class="city__list">
+                            <li class="city__list-item"> <button class="city__list-button">Владивосток</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Владимир</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Волгоград</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Екатеринбург</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Иркутск</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Казань</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Краснодар</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Красноярск</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Москва</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Нижний Новгород</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Новосибирск</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Омск</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Пермь</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Ростов-на-Дону</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Самара</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Санкт-Петербург</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Смоленск</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Уфа</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Хабаровск</button></li>
+                            <li class="city__list-item"> <button class="city__list-button">Ярославль</button></li>
+                        </ul>
+                    </div>
+                </div><!--END .city-->
+            </div>
+        </div><!--END .box-->
+    </header><!--END .header-->
+    <main class="main">
+        <section class="intro intro--start-career">
+            <div class="box">
+                <div class="intro__container">
+                    <div class="intro__decor-set">
+                        <div class="image-box intro__decor intro__decor--main">
+                            <img class="image-box__image" src="images/intro/purple-intro.svg" alt="">
+                        </div><!--END. image-box-->
+                        <svg class="decor decor--fill intro__decor intro__decor--border-1" width="783" height="573">
+                            <use xlink:href="images/decor-sprite.svg#clear-intro"></use>
+                        </svg><!--END .decor-->
+                        <svg class="decor decor--fill intro__decor intro__decor--border-2" width="783" height="573">
+                            <use xlink:href="images/decor-sprite.svg#clear-intro"></use>
+                        </svg><!--END .decor-->
+                    </div>
+                    <div class="intro__group">
+                        <div class="intro__info">
+                            <h1 class="title title--size-xl intro__title">Начало карьеры </h1><!--END .title-->
+                            <div class="intro__text">Вы — наше будущее. Давайте строить его вместе! </div>
+                        </div>
+                        <a class="ctrl-button ctrl-button--color-red-border intro__button" href="#42">
+                            <span class="ctrl-button__container"><span class="ctrl-button__text">Показать все вакансии</span>
+
+                                <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                    <use xlink:href="images/svg-sprite.svg#arrow-right"></use>
+                                </svg><!--END .icon--></span>
+                        </a><!--END .ctrl-button -->
+                    </div>
+                </div>
+                <div class="intro__media">
+                    <div class="slider slider--simple intro__slider js-intro-slider">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <picture class="picture picture--fit swiper-slide">
+                                    <source srcset="images/intro/start-career/slide-1@750w.webp, images/intro/start-career/slide-1@750w.jpg" media="(max-width: 767px)">
+                                    <source srcset="images/intro/start-career/slide-1@1110w.webp, images/intro/start-career/slide-1@1110w.jpg" media="(max-width: 1024px)">
+                                    <source srcset="images/intro/start-career/slide-1@2006w.webp, images/intro/start-career/slide-1@2006w.jpg" media="(min-width: 1025px)"><img class="picture__image" src="images/intro/start-career/slide-1@max.jpg" loading="lazy">
+                                </picture>
+                                <picture class="picture picture--fit swiper-slide">
+                                    <source srcset="images/intro/start-career/slide-2@750w.webp, images/intro/start-career/slide-2@750w.jpg" media="(max-width: 767px)">
+                                    <source srcset="images/intro/start-career/slide-2@1110w.webp, images/intro/start-career/slide-2@1110w.jpg" media="(max-width: 1024px)">
+                                    <source srcset="images/intro/start-career/slide-2@2006w.webp, images/intro/start-career/slide-2@2006w.jpg" media="(min-width: 1025px)"><img class="picture__image" src="images/intro/start-career/slide-2@max.jpg" loading="lazy">
+                                </picture>
+                                <picture class="picture picture--fit swiper-slide">
+                                    <source srcset="images/intro/start-career/slide-1@750w.webp, images/intro/start-career/slide-1@750w.jpg" media="(max-width: 767px)">
+                                    <source srcset="images/intro/start-career/slide-1@1110w.webp, images/intro/start-career/slide-1@1110w.jpg" media="(max-width: 1024px)">
+                                    <source srcset="images/intro/start-career/slide-1@2006w.webp, images/intro/start-career/slide-1@2006w.jpg" media="(min-width: 1025px)"><img class="picture__image" src="images/intro/start-career/slide-1@max.jpg" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="swiper-pagination"> </div>
+                        </div>
+                    </div><!--END .slider-->
+                </div>
+            </div><!--END .box-->
+        </section><!--END .intro-->
+        <section class="start-info">
+            <div class="gradient-bg start-info__bg">
+                <div class="image-box gradient-bg__item gradient-bg__item--1">
+                    <img class="image-box__image" src="images/gradient-bg/gradient-1.svg" alt="">
+                </div><!--END. image-box-->
+                <div class="image-box gradient-bg__item gradient-bg__item--2">
+                    <img class="image-box__image" src="images/gradient-bg/gradient-2.svg" alt="">
+                </div><!--END. image-box-->
+                <div class="image-box gradient-bg__item gradient-bg__item--3">
+                    <img class="image-box__image" src="images/gradient-bg/gradient-3.svg" alt="">
+                </div><!--END. image-box-->
+            </div><!--END .gradient-bg-->
+            <div class="box">
+                <div class="start-info__group">
+                    <div class="start-info__item">
+                        <div class="start-info__text">Работая с нами, вы получите опыт в&nbsp;крупнейших проектах и&nbsp;станете частью команды, формирующей будущее металлургической отрасли.</div>
+                        <svg class="decor decor--fill start-info__decor" width="100px" height="50px">
+                            <use xlink:href="images/decor-sprite.svg#pattern-dots"></use>
+                        </svg><!--END .decor-->
+                    </div>
+                    <div class="start-info__item">
+                        <div class="start-info__text">Присоединяйтесь к&nbsp;нам, и&nbsp;вы&nbsp;получите шанс работать в&nbsp;компании с&nbsp;огромным потенциалом для&nbsp;роста и&nbsp;развития.</div>
+                        <svg class="decor decor--fill start-info__decor" width="100px" height="50px">
+                            <use xlink:href="images/decor-sprite.svg#pattern-dots"></use>
+                        </svg><!--END .decor-->
+                    </div>
+                </div>
+            </div>
+        </section><!--END .start-info-->
+        <section class="popular-vacancies popular-vacancies--start">
+            <div class="box">
+                <div class="popular-vacancies__box">
+                    <div class="popular-vacancies__header">
+                        <h2 class="title popular-vacancies__title">Вакансии для молодых специалистов
+                            <svg class="icon title__icon" width="36" height="39">
+                                <use xlink:href="images/svg-sprite.svg#arrow-dots"></use>
+                            </svg><!--END .icon-->
+                        </h2><!--END .title-->
+                        <div class="hint popular-vacancies__hint">
+                            <div class="hint__button"><span class="hint__text">Как рассчитывается указанный доход</span>
+                                <svg class="icon icon--stroke hint__icon" width="24px" height="24px">
+                                    <use xlink:href="images/svg-sprite.svg#question"></use>
+                                </svg><!--END .icon-->
+                            </div>
+                            <div class="hint__info">
+                                <div class="hint__info-text">Указанная сумма дохода в месяц — средняя заработная плата за 12 месяцев с учётом годовой премии после удержания НДФЛ.</div>
+                            </div>
+                        </div><!--END .hint-->
+                    </div>
+                    <div class="tabs tabs--vacancies js-tabs popular-vacancies__tabs">
+                        <div class="tabs__nav"> <button class="tabs__nav-item" type="button">Москва</button><button class="tabs__nav-item" type="button">Лыткарино</button><button class="tabs__nav-item" type="button">Иваново</button><button class="tabs__nav-item" type="button">Краснодар</button><button class="tabs__nav-item" type="button">Ростов-на-Дону</button><button class="tabs__nav-item" type="button">Гирей</button></div>
+                        <div class="tabs__content">
+                            <div class="tabs__content-item">
+                                <div class="tabs__content-nav">Лыткарино</div>
+                                <div class="vacancy-card">
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__title">Грузчик-стропальщик</div>
+                                        <div class="vacancy-card__salary"> <span>от 80 000</span>
+                                            <svg class="icon icon--stroke vacancy-card__salary-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#rub"></use>
+                                            </svg><!--END .icon-->
+                                        </div>
+                                        <a class="ctrl-button ctrl-button--icon-only vacancy-card__button" href="#42">
+                                            <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                                <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                                    <use xlink:href="images/svg-sprite.svg#arrow-right"></use>
+                                                </svg><!--END .icon--></span>
+                                        </a><!--END .ctrl-button -->
+                                    </div>
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__details vacancy-card__details--city">
+                                            <svg class="icon icon--fill vacancy-card__details-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#pin-2"></use>
+                                            </svg><!--END .icon--><span>Лыткарино</span>
+                                        </div>
+                                        <div class="vacancy-card__details vacancy-card__details--experience">1–3 года опыта </div>
+                                        <div class="vacancy-card__details vacancy-card__details--type">Полная занятость</div>
+                                    </div><a class="vacancy-card__link" href="#3"></a>
+                                </div><!--END .vacancy-card-->
+                                <div class="vacancy-card">
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__title">Электрогазосварщик</div>
+                                        <div class="vacancy-card__salary"> <span>от 80 000</span>
+                                            <svg class="icon icon--stroke vacancy-card__salary-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#rub"></use>
+                                            </svg><!--END .icon-->
+                                        </div>
+                                        <a class="ctrl-button ctrl-button--icon-only vacancy-card__button" href="#42">
+                                            <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                                <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                                    <use xlink:href="images/svg-sprite.svg#arrow-right"></use>
+                                                </svg><!--END .icon--></span>
+                                        </a><!--END .ctrl-button -->
+                                    </div>
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__details vacancy-card__details--city">
+                                            <svg class="icon icon--fill vacancy-card__details-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#pin-2"></use>
+                                            </svg><!--END .icon--><span>Лыткарино</span>
+                                        </div>
+                                        <div class="vacancy-card__details vacancy-card__details--experience">1–3 года опыта </div>
+                                        <div class="vacancy-card__details vacancy-card__details--type">Полная занятость</div>
+                                    </div><a class="vacancy-card__link" href="#3"></a>
+                                </div><!--END .vacancy-card-->
+                                <div class="vacancy-card">
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__title">Уборщик производственных и служебных помещений</div>
+                                        <div class="vacancy-card__salary"> <span>от 80 000</span>
+                                            <svg class="icon icon--stroke vacancy-card__salary-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#rub"></use>
+                                            </svg><!--END .icon-->
+                                        </div>
+                                        <a class="ctrl-button ctrl-button--icon-only vacancy-card__button" href="#42">
+                                            <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                                <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                                    <use xlink:href="images/svg-sprite.svg#arrow-right"></use>
+                                                </svg><!--END .icon--></span>
+                                        </a><!--END .ctrl-button -->
+                                    </div>
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__details vacancy-card__details--city">
+                                            <svg class="icon icon--fill vacancy-card__details-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#pin-2"></use>
+                                            </svg><!--END .icon--><span>Лыткарино</span>
+                                        </div>
+                                        <div class="vacancy-card__details vacancy-card__details--experience">1–3 года опыта </div>
+                                        <div class="vacancy-card__details vacancy-card__details--type">Полная занятость</div>
+                                    </div><a class="vacancy-card__link" href="#3"></a>
+                                </div><!--END .vacancy-card-->
+                                <div class="vacancy-card">
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__title">Грузчик-стропальщик</div>
+                                        <div class="vacancy-card__salary"> <span>от 100 000</span>
+                                            <svg class="icon icon--stroke vacancy-card__salary-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#rub"></use>
+                                            </svg><!--END .icon-->
+                                        </div>
+                                        <a class="ctrl-button ctrl-button--icon-only vacancy-card__button" href="#42">
+                                            <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                                <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                                    <use xlink:href="images/svg-sprite.svg#arrow-right"></use>
+                                                </svg><!--END .icon--></span>
+                                        </a><!--END .ctrl-button -->
+                                    </div>
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__details vacancy-card__details--city">
+                                            <svg class="icon icon--fill vacancy-card__details-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#pin-2"></use>
+                                            </svg><!--END .icon--><span>Лыткарино</span>
+                                        </div>
+                                        <div class="vacancy-card__details vacancy-card__details--experience">1–3 года опыта </div>
+                                        <div class="vacancy-card__details vacancy-card__details--type">Полная занятость</div>
+                                    </div><a class="vacancy-card__link" href="#3"></a>
+                                </div><!--END .vacancy-card-->
+                            </div>
+                            <div class="tabs__content-item">
+                                <div class="tabs__content-nav">Москва</div>
+                                <div class="vacancy-card">
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__title">Грузчик-стропальщик</div>
+                                        <div class="vacancy-card__salary"> <span>от 80 000</span>
+                                            <svg class="icon icon--stroke vacancy-card__salary-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#rub"></use>
+                                            </svg><!--END .icon-->
+                                        </div>
+                                        <a class="ctrl-button ctrl-button--icon-only vacancy-card__button" href="#42">
+                                            <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                                <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                                    <use xlink:href="images/svg-sprite.svg#arrow-right"></use>
+                                                </svg><!--END .icon--></span>
+                                        </a><!--END .ctrl-button -->
+                                    </div>
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__details vacancy-card__details--city">
+                                            <svg class="icon icon--fill vacancy-card__details-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#pin-2"></use>
+                                            </svg><!--END .icon--><span>Лыткарино</span>
+                                        </div>
+                                        <div class="vacancy-card__details vacancy-card__details--experience">1–3 года опыта </div>
+                                        <div class="vacancy-card__details vacancy-card__details--type">Полная занятость</div>
+                                    </div><a class="vacancy-card__link" href="#3"></a>
+                                </div><!--END .vacancy-card-->
+                                <div class="vacancy-card">
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__title">Электрогазосварщик</div>
+                                        <div class="vacancy-card__salary"> <span>от 80 000</span>
+                                            <svg class="icon icon--stroke vacancy-card__salary-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#rub"></use>
+                                            </svg><!--END .icon-->
+                                        </div>
+                                        <a class="ctrl-button ctrl-button--icon-only vacancy-card__button" href="#42">
+                                            <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                                <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                                    <use xlink:href="images/svg-sprite.svg#arrow-right"></use>
+                                                </svg><!--END .icon--></span>
+                                        </a><!--END .ctrl-button -->
+                                    </div>
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__details vacancy-card__details--city">
+                                            <svg class="icon icon--fill vacancy-card__details-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#pin-2"></use>
+                                            </svg><!--END .icon--><span>Лыткарино</span>
+                                        </div>
+                                        <div class="vacancy-card__details vacancy-card__details--experience">1–3 года опыта </div>
+                                        <div class="vacancy-card__details vacancy-card__details--type">Полная занятость</div>
+                                    </div><a class="vacancy-card__link" href="#3"></a>
+                                </div><!--END .vacancy-card-->
+                            </div>
+                            <div class="tabs__content-item">
+                                <div class="tabs__content-nav">Иваново</div>
+                                <div class="vacancy-card">
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__title">Уборщик производственных и служебных помещений</div>
+                                        <div class="vacancy-card__salary"> <span>от 80 000</span>
+                                            <svg class="icon icon--stroke vacancy-card__salary-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#rub"></use>
+                                            </svg><!--END .icon-->
+                                        </div>
+                                        <a class="ctrl-button ctrl-button--icon-only vacancy-card__button" href="#42">
+                                            <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                                <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                                    <use xlink:href="images/svg-sprite.svg#arrow-right"></use>
+                                                </svg><!--END .icon--></span>
+                                        </a><!--END .ctrl-button -->
+                                    </div>
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__details vacancy-card__details--city">
+                                            <svg class="icon icon--fill vacancy-card__details-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#pin-2"></use>
+                                            </svg><!--END .icon--><span>Лыткарино</span>
+                                        </div>
+                                        <div class="vacancy-card__details vacancy-card__details--experience">1–3 года опыта </div>
+                                        <div class="vacancy-card__details vacancy-card__details--type">Полная занятость</div>
+                                    </div><a class="vacancy-card__link" href="#3"></a>
+                                </div><!--END .vacancy-card-->
+                            </div>
+                            <div class="tabs__content-item">
+                                <div class="tabs__content-nav">Краснодар</div>
+                                <div class="vacancy-card">
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__title">Электрогазосварщик</div>
+                                        <div class="vacancy-card__salary"> <span>от 80 000</span>
+                                            <svg class="icon icon--stroke vacancy-card__salary-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#rub"></use>
+                                            </svg><!--END .icon-->
+                                        </div>
+                                        <a class="ctrl-button ctrl-button--icon-only vacancy-card__button" href="#42">
+                                            <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                                <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                                    <use xlink:href="images/svg-sprite.svg#arrow-right"></use>
+                                                </svg><!--END .icon--></span>
+                                        </a><!--END .ctrl-button -->
+                                    </div>
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__details vacancy-card__details--city">
+                                            <svg class="icon icon--fill vacancy-card__details-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#pin-2"></use>
+                                            </svg><!--END .icon--><span>Лыткарино</span>
+                                        </div>
+                                        <div class="vacancy-card__details vacancy-card__details--experience">1–3 года опыта </div>
+                                        <div class="vacancy-card__details vacancy-card__details--type">Полная занятость</div>
+                                    </div><a class="vacancy-card__link" href="#3"></a>
+                                </div><!--END .vacancy-card-->
+                                <div class="vacancy-card">
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__title">Грузчик-стропальщик</div>
+                                        <div class="vacancy-card__salary"> <span>от 100 000</span>
+                                            <svg class="icon icon--stroke vacancy-card__salary-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#rub"></use>
+                                            </svg><!--END .icon-->
+                                        </div>
+                                        <a class="ctrl-button ctrl-button--icon-only vacancy-card__button" href="#42">
+                                            <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                                <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                                    <use xlink:href="images/svg-sprite.svg#arrow-right"></use>
+                                                </svg><!--END .icon--></span>
+                                        </a><!--END .ctrl-button -->
+                                    </div>
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__details vacancy-card__details--city">
+                                            <svg class="icon icon--fill vacancy-card__details-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#pin-2"></use>
+                                            </svg><!--END .icon--><span>Лыткарино</span>
+                                        </div>
+                                        <div class="vacancy-card__details vacancy-card__details--experience">1–3 года опыта </div>
+                                        <div class="vacancy-card__details vacancy-card__details--type">Полная занятость</div>
+                                    </div><a class="vacancy-card__link" href="#3"></a>
+                                </div><!--END .vacancy-card-->
+                            </div>
+                            <div class="tabs__content-item">
+                                <div class="tabs__content-nav">Ростов-на-Дону</div>
+                                <div class="vacancy-card">
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__title">Грузчик-стропальщик</div>
+                                        <div class="vacancy-card__salary"> <span>от 100 000</span>
+                                            <svg class="icon icon--stroke vacancy-card__salary-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#rub"></use>
+                                            </svg><!--END .icon-->
+                                        </div>
+                                        <a class="ctrl-button ctrl-button--icon-only vacancy-card__button" href="#42">
+                                            <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                                <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                                    <use xlink:href="images/svg-sprite.svg#arrow-right"></use>
+                                                </svg><!--END .icon--></span>
+                                        </a><!--END .ctrl-button -->
+                                    </div>
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__details vacancy-card__details--city">
+                                            <svg class="icon icon--fill vacancy-card__details-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#pin-2"></use>
+                                            </svg><!--END .icon--><span>Лыткарино</span>
+                                        </div>
+                                        <div class="vacancy-card__details vacancy-card__details--experience">1–3 года опыта </div>
+                                        <div class="vacancy-card__details vacancy-card__details--type">Полная занятость</div>
+                                    </div><a class="vacancy-card__link" href="#3"></a>
+                                </div><!--END .vacancy-card-->
+                            </div>
+                            <div class="tabs__content-item">
+                                <div class="tabs__content-nav">Гирей</div>
+                                <div class="vacancy-card">
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__title">Электрогазосварщик</div>
+                                        <div class="vacancy-card__salary"> <span>от 80 000</span>
+                                            <svg class="icon icon--stroke vacancy-card__salary-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#rub"></use>
+                                            </svg><!--END .icon-->
+                                        </div>
+                                        <a class="ctrl-button ctrl-button--icon-only vacancy-card__button" href="#42">
+                                            <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                                <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                                    <use xlink:href="images/svg-sprite.svg#arrow-right"></use>
+                                                </svg><!--END .icon--></span>
+                                        </a><!--END .ctrl-button -->
+                                    </div>
+                                    <div class="vacancy-card__group">
+                                        <div class="vacancy-card__details vacancy-card__details--city">
+                                            <svg class="icon icon--fill vacancy-card__details-icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#pin-2"></use>
+                                            </svg><!--END .icon--><span>Лыткарино</span>
+                                        </div>
+                                        <div class="vacancy-card__details vacancy-card__details--experience">1–3 года опыта </div>
+                                        <div class="vacancy-card__details vacancy-card__details--type">Полная занятость</div>
+                                    </div><a class="vacancy-card__link" href="#3"></a>
+                                </div><!--END .vacancy-card-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-vacancies__button-box">
+                        <a class="ctrl-button ctrl-button--color-red-border popular-vacancies__button" href="#42">
+                            <span class="ctrl-button__container"><span class="ctrl-button__text">Показать больше вакансий</span>
+
+                                <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                    <use xlink:href="images/svg-sprite.svg#arrow-right"></use>
+                                </svg><!--END .icon--></span>
+                        </a><!--END .ctrl-button -->
+                    </div>
+                </div>
+            </div>
+        </section><!--END .popular-vacancies-->
+        <section class="benefits benefits--tourism">
+            <div class="box">
+                <h2 class="title benefits__title">Промышленный туризм для школьников и студентов
+                    <svg class="icon title__icon" width="36" height="39">
+                        <use xlink:href="images/svg-sprite.svg#arrow-dots"></use>
+                    </svg><!--END .icon-->
+                </h2><!--END .title-->
+                <div class="benefits__group">
+                    <div class="benefit-card benefit-card--start benefits__item">
+                        <div class="benefit-card__group">
+                            <div class="benefit-card__content">
+                                <h2 class="title benefit-card__title">Промышленный туризм — это не просто экскурсия, а знакомство с процессом создания продукта
+                                    <svg class="icon title__icon" width="36" height="39">
+                                        <use xlink:href="images/svg-sprite.svg#arrow-right-dots"></use>
+                                    </svg><!--END .icon-->
+                                </h2><!--END .title-->
+                            </div>
+                        </div>
+                    </div><!--END .benefit-card-->
+                    <div class="benefit-card benefit-card--knowledge benefits__item">
+                        <div class="benefit-card__group">
+                            <div class="benefit-card__content">
+                                <div class="benefit-card__text">На нашем производстве вы <strong>получите знания и представления о современных технологиях</strong></div>
+                            </div>
+                            <div class="image-box benefit-card__image">
+                                <img class="image-box__image" src="images/benefit-card/image-9.png" alt="">
+                            </div><!--END. image-box-->
+                        </div>
+                    </div><!--END .benefit-card-->
+                    <div class="benefit-card benefit-card--introduce benefits__item">
+                        <div class="benefit-card__group">
+                            <div class="benefit-card__content">
+                                <div class="benefit-card__text">Куратор познакомит с <strong>новыми востребованными профессиями</strong></div>
+                            </div>
+                            <div class="image-box benefit-card__image">
+                                <img class="image-box__image" src="images/benefit-card/image-10.png" alt="">
+                            </div><!--END. image-box-->
+                        </div>
+                    </div><!--END .benefit-card-->
+                    <div class="benefit-card benefit-card--stereotype benefits__item">
+                        <div class="benefit-card__group">
+                            <div class="benefit-card__content">
+                                <div class="benefit-card__text">Мы вместе <strong>разрушим стереотип</strong> о непрестижности работы на заводе</div>
+                            </div>
+                            <div class="image-box benefit-card__image">
+                                <img class="image-box__image" src="images/benefit-card/image-11.png" alt="">
+                            </div><!--END. image-box-->
+                        </div>
+                    </div><!--END .benefit-card-->
+                </div>
+            </div>
+        </section><!--END .benefits-->
+        <section class="start-options">
+            <div class="box">
+                <svg class="decor start-options__decor" width="725px" height="751px">
+                    <use xlink:href="images/decor-sprite.svg#decor-start-options"></use>
+                </svg><!--END .decor-->
+                <h2 class="title start-options__title">Сделайте первый шаг в карьере вместе с нами
+                    <svg class="icon title__icon" width="36" height="39">
+                        <use xlink:href="images/svg-sprite.svg#arrow-dots"></use>
+                    </svg><!--END .icon-->
+                </h2><!--END .title-->
+                <div class="start-options__group">
+                    <div class="start-options__line">
+                        <div class="start-options__item">
+                            <h2 class="title start-options__item-title">Промышленный туризм </h2><!--END .title-->
+                        </div>
+                        <div class="start-options__item">
+                            <div class="start-options__subtitle">Что это?</div>
+                            <div class="start-options__text">Одно из направлений сотрудничества с профильными учебными заведениями — организация экскурсий на производство, где студенты на деле могут приблизиться к изучаемым специальностям.</div>
+                        </div>
+                        <div class="start-options__item">
+                            <div class="start-options__subtitle">Как попасть на экскурсию?</div>
+                            <div class="start-options__text">Экскурсии проходят по понедельникам на «Верхневолжском СМЦ» в городе Иваново. Для записи куратору группы необходимо обратиться в отдел кадров по телефону: <strong>+7 4932 38-30-21</strong>.</div>
+                        </div>
+                    </div>
+                    <div class="start-options__line">
+                        <div class="start-options__item">
+                            <h2 class="title start-options__item-title">Вакансии <br>без&nbsp;опыта работы </h2><!--END .title-->
+                        </div>
+                        <div class="start-options__item">
+                            <div class="start-options__subtitle">Что это?</div>
+                            <div class="start-options__text">В группе компаний «ДиПОС» выпускникам ВУЗов и ССУзов мы предлагаем вакансии без опыта работы. Для учащихся открываются временные вакансии на производстве с целью приблизить студентов к реальной жизни промышленного предприятия и дать возможность получить дополнительный доход.</div>
+                        </div>
+                        <div class="start-options__item">
+                            <div class="start-options__subtitle">Как найти вакансию?</div>
+                            <div class="start-options__text">Если вы хотите устроиться на постоянную работу, перейдите в раздел «Вакансии» и установите фильтр «Без опыта», чтобы увидеть подходящие вакансии. Не забудьте выбрать ваш регион! Для временного трудоустройства в нашей компании записывайтесь у кураторов своего учебного заведения в рамках соглашений о сотрудничестве и посещайте наш стенд на ярмарках вакансий!</div>
+                        </div>
+                    </div>
+                    <div class="start-options__line">
+                        <div class="start-options__item">
+                            <h2 class="title start-options__item-title">Прохождение практики </h2><!--END .title-->
+                        </div>
+                        <div class="start-options__item">
+                            <div class="start-options__subtitle">Что это?</div>
+                            <div class="start-options__text">В нашей компании студенты проходят оплачиваемую практику с оформлением срочного трудового договора. Во время практики за каждым закрепляется наставник.</div>
+                        </div>
+                        <div class="start-options__item">
+                            <div class="start-options__subtitle">Как попасть к нам на практику?</div>
+                            <div class="start-options__text">Для прохождения практики в нашей компании записывайтесь у кураторов своего учебного заведения в рамках соглашений о сотрудничестве и посещайте наш стенд на ярмарках вакансий!</div>
+                        </div>
+                    </div>
+                    <div class="start-options__line">
+                        <div class="start-options__item">
+                            <h2 class="title start-options__item-title">Сотрудничество <br>с&nbsp;ВУЗами и&nbsp;ССУЗами </h2><!--END .title-->
+                        </div>
+                        <div class="start-options__item">
+                            <div class="start-options__subtitle">Что это?</div>
+                            <div class="start-options__text">Представительствами группы компаний «ДиПОС» заключены бессрочные соглашения о сотрудничестве с основными профильными ВУЗами и ССУЗами.</div>
+                        </div>
+                        <div class="start-options__item">
+                            <div class="start-options__subtitle">Какова цель сотрудничества?</div>
+                            <div class="start-options__text">Мы сотрудничаем с ключевыми учебными заведениями, чтобы повысить узнаваемость нашей компании и достичь глубокой интеграции во взаимные процессы и выдвижение работы с молодыми профессионалами в приоритетное направление.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--END .start-options-->
+        <section class="gallery js-gallery">
+            <div class="gallery__fullscreen">
+                <button class="ctrl-button ctrl-button--icon-only gallery__close js-gallery-close" type="button">
+                    <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                        <svg class="icon icon--fill ctrl-button__icon" width="24px" height="24px">
+                            <use xlink:href="images/svg-sprite.svg#close"></use>
+                        </svg><!--END .icon--></span>
+                </button><!--END .ctrl-button -->
+                <div class="slider slider--gallery gallery__fullscreen-slider js-gallery-fullscreen">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/fullscreen/image-5@700w.webp 700w, images/gallery/fullscreen/image-5@2100w.webp 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px" type="image/webp">
+                                <source srcset="images/gallery/fullscreen/image-5@700w.jpg 700w, images/gallery/fullscreen/image-5@2100w.jpg 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px"><img class="picture__image" src="images/gallery/fullscreen/image-5@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/fullscreen/image-6@700w.webp 700w, images/gallery/fullscreen/image-6@2100w.webp 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px" type="image/webp">
+                                <source srcset="images/gallery/fullscreen/image-6@700w.jpg 700w, images/gallery/fullscreen/image-6@2100w.jpg 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px"><img class="picture__image" src="images/gallery/fullscreen/image-6@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/fullscreen/image-7@700w.webp 700w, images/gallery/fullscreen/image-7@2100w.webp 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px" type="image/webp">
+                                <source srcset="images/gallery/fullscreen/image-7@700w.jpg 700w, images/gallery/fullscreen/image-7@2100w.jpg 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px"><img class="picture__image" src="images/gallery/fullscreen/image-7@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/fullscreen/image-8@700w.webp 700w, images/gallery/fullscreen/image-8@2100w.webp 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px" type="image/webp">
+                                <source srcset="images/gallery/fullscreen/image-8@700w.jpg 700w, images/gallery/fullscreen/image-8@2100w.jpg 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px"><img class="picture__image" src="images/gallery/fullscreen/image-8@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/fullscreen/image-1@700w.webp 700w, images/gallery/fullscreen/image-1@2100w.webp 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px" type="image/webp">
+                                <source srcset="images/gallery/fullscreen/image-1@700w.jpg 700w, images/gallery/fullscreen/image-1@2100w.jpg 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px"><img class="picture__image" src="images/gallery/fullscreen/image-1@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/fullscreen/image-2@700w.webp 700w, images/gallery/fullscreen/image-2@2100w.webp 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px" type="image/webp">
+                                <source srcset="images/gallery/fullscreen/image-2@700w.jpg 700w, images/gallery/fullscreen/image-2@2100w.jpg 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px"><img class="picture__image" src="images/gallery/fullscreen/image-2@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/fullscreen/image-3@700w.webp 700w, images/gallery/fullscreen/image-3@2100w.webp 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px" type="image/webp">
+                                <source srcset="images/gallery/fullscreen/image-3@700w.jpg 700w, images/gallery/fullscreen/image-3@2100w.jpg 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px"><img class="picture__image" src="images/gallery/fullscreen/image-3@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/fullscreen/image-4@700w.webp 700w, images/gallery/fullscreen/image-4@2100w.webp 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px" type="image/webp">
+                                <source srcset="images/gallery/fullscreen/image-4@700w.jpg 700w, images/gallery/fullscreen/image-4@2100w.jpg 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px"><img class="picture__image" src="images/gallery/fullscreen/image-4@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/fullscreen/image-1@700w.webp 700w, images/gallery/fullscreen/image-1@2100w.webp 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px" type="image/webp">
+                                <source srcset="images/gallery/fullscreen/image-1@700w.jpg 700w, images/gallery/fullscreen/image-1@2100w.jpg 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px"><img class="picture__image" src="images/gallery/fullscreen/image-1@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/fullscreen/image-2@700w.webp 700w, images/gallery/fullscreen/image-2@2100w.webp 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px" type="image/webp">
+                                <source srcset="images/gallery/fullscreen/image-2@700w.jpg 700w, images/gallery/fullscreen/image-2@2100w.jpg 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px"><img class="picture__image" src="images/gallery/fullscreen/image-2@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/fullscreen/image-3@700w.webp 700w, images/gallery/fullscreen/image-3@2100w.webp 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px" type="image/webp">
+                                <source srcset="images/gallery/fullscreen/image-3@700w.jpg 700w, images/gallery/fullscreen/image-3@2100w.jpg 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px"><img class="picture__image" src="images/gallery/fullscreen/image-3@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/fullscreen/image-4@700w.webp 700w, images/gallery/fullscreen/image-4@2100w.webp 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px" type="image/webp">
+                                <source srcset="images/gallery/fullscreen/image-4@700w.jpg 700w, images/gallery/fullscreen/image-4@2100w.jpg 2100w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 1050px"><img class="picture__image" src="images/gallery/fullscreen/image-4@max.jpg" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="slider__nav">
+                        <div class="swiper-button-prev">
+                            <button class="ctrl-button ctrl-button--arrow" type="button">
+                                <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                    <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                        <use xlink:href="images/svg-sprite.svg#arrow-left"></use>
+                                    </svg><!--END .icon--></span>
+                            </button><!--END .ctrl-button -->
+                        </div>
+                        <div class="swiper-button-next">
+                            <button class="ctrl-button ctrl-button--arrow" type="button">
+                                <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                    <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                        <use xlink:href="images/svg-sprite.svg#arrow-left"></use>
+                                    </svg><!--END .icon--></span>
+                            </button><!--END .ctrl-button -->
+                        </div>
+                    </div>
+                </div><!--END .slider-->
+            </div>
+            <div class="gallery__line">
+                <div class="slider slider--gallery gallery__thumbs js-gallery-thumbs" thumbsSlider="">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/image-5@360w.webp 360w, images/gallery/image-5@720w.webp 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px" type="image/webp">
+                                <source srcset="images/gallery/image-5@360w.jpg 360w, images/gallery/image-5@720w.jpg 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px"><img class="picture__image" src="images/gallery/image-5@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/image-6@360w.webp 360w, images/gallery/image-6@720w.webp 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px" type="image/webp">
+                                <source srcset="images/gallery/image-6@360w.jpg 360w, images/gallery/image-6@720w.jpg 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px"><img class="picture__image" src="images/gallery/image-6@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/image-7@360w.webp 360w, images/gallery/image-7@720w.webp 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px" type="image/webp">
+                                <source srcset="images/gallery/image-7@360w.jpg 360w, images/gallery/image-7@720w.jpg 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px"><img class="picture__image" src="images/gallery/image-7@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/image-8@360w.webp 360w, images/gallery/image-8@720w.webp 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px" type="image/webp">
+                                <source srcset="images/gallery/image-8@360w.jpg 360w, images/gallery/image-8@720w.jpg 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px"><img class="picture__image" src="images/gallery/image-8@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/image-1@360w.webp 360w, images/gallery/image-1@720w.webp 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px" type="image/webp">
+                                <source srcset="images/gallery/image-1@360w.jpg 360w, images/gallery/image-1@720w.jpg 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px"><img class="picture__image" src="images/gallery/image-1@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/image-2@360w.webp 360w, images/gallery/image-2@720w.webp 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px" type="image/webp">
+                                <source srcset="images/gallery/image-2@360w.jpg 360w, images/gallery/image-2@720w.jpg 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px"><img class="picture__image" src="images/gallery/image-2@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/image-3@360w.webp 360w, images/gallery/image-3@720w.webp 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px" type="image/webp">
+                                <source srcset="images/gallery/image-3@360w.jpg 360w, images/gallery/image-3@720w.jpg 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px"><img class="picture__image" src="images/gallery/image-3@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/image-4@360w.webp 360w, images/gallery/image-4@720w.webp 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px" type="image/webp">
+                                <source srcset="images/gallery/image-4@360w.jpg 360w, images/gallery/image-4@720w.jpg 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px"><img class="picture__image" src="images/gallery/image-4@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/image-1@360w.webp 360w, images/gallery/image-1@720w.webp 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px" type="image/webp">
+                                <source srcset="images/gallery/image-1@360w.jpg 360w, images/gallery/image-1@720w.jpg 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px"><img class="picture__image" src="images/gallery/image-1@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/image-2@360w.webp 360w, images/gallery/image-2@720w.webp 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px" type="image/webp">
+                                <source srcset="images/gallery/image-2@360w.jpg 360w, images/gallery/image-2@720w.jpg 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px"><img class="picture__image" src="images/gallery/image-2@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/image-3@360w.webp 360w, images/gallery/image-3@720w.webp 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px" type="image/webp">
+                                <source srcset="images/gallery/image-3@360w.jpg 360w, images/gallery/image-3@720w.jpg 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px"><img class="picture__image" src="images/gallery/image-3@max.jpg" loading="lazy">
+                            </picture>
+                            <picture class="picture picture--fit swiper-slide">
+                                <source srcset="images/gallery/image-4@360w.webp 360w, images/gallery/image-4@720w.webp 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px" type="image/webp">
+                                <source srcset="images/gallery/image-4@360w.jpg 360w, images/gallery/image-4@720w.jpg 720w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 720px"><img class="picture__image" src="images/gallery/image-4@max.jpg" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="slider__nav">
+                        <div class="swiper-button-prev">
+                            <button class="ctrl-button ctrl-button--arrow" type="button">
+                                <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                    <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                        <use xlink:href="images/svg-sprite.svg#arrow-left"></use>
+                                    </svg><!--END .icon--></span>
+                            </button><!--END .ctrl-button -->
+                        </div>
+                        <div class="swiper-button-next">
+                            <button class="ctrl-button ctrl-button--arrow" type="button">
+                                <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                    <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                        <use xlink:href="images/svg-sprite.svg#arrow-left"></use>
+                                    </svg><!--END .icon--></span>
+                            </button><!--END .ctrl-button -->
+                        </div>
+                    </div>
+                </div><!--END .slider-->
+            </div>
+        </section><!--END .gallery-->
+        <section class="advantages">
+            <div class="box">
+                <h2 class="title title--red advantages__title">Настройтесь на&nbsp;калейдоскоп преимуществ </h2><!--END .title-->
+                <div class="advantages__slider">
+                    <div class="slider slider--cards js-slider-cards">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide--advantages">
+                                    <div class="advantage-card advantage-card--safety">
+                                        <div class="advantage-card__image">
+                                            <picture class="picture picture--fit">
+                                                <source srcset="images/advantages/image-1@200w.webp 200w, images/advantages/image-1@400w.webp 400w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 400px" type="image/webp">
+                                                <source srcset="images/advantages/image-1@200w.png 200w, images/advantages/image-1@400w.png 400w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 400px"><img class="picture__image" src="images/advantages/image-1@max.png" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="advantage-card__content">
+                                            <svg class="icon icon--fill advantage-card__icon" width="20" height="36">
+                                                <use xlink:href="images/svg-sprite.svg#arrow-dotted"></use>
+                                            </svg><!--END .icon-->
+                                            <div class="advantage-card__text">Конкурентоспособная официальная заработная плата </div>
+                                        </div>
+                                    </div><!--END .advantage-card-->
+                                </div>
+                                <div class="swiper-slide swiper-slide--advantages">
+                                    <div class="advantage-card advantage-card--training">
+                                        <div class="advantage-card__image">
+                                            <picture class="picture picture--fit">
+                                                <source srcset="images/advantages/image-7@214w.webp 214w, images/advantages/image-7@426w.webp 426w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 426px" type="image/webp">
+                                                <source srcset="images/advantages/image-7@214w.png 214w, images/advantages/image-7@426w.png 426w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 426px"><img class="picture__image" src="images/advantages/image-7@max.png" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="advantage-card__content">
+                                            <svg class="icon icon--fill advantage-card__icon" width="20" height="36">
+                                                <use xlink:href="images/svg-sprite.svg#arrow-dotted"></use>
+                                            </svg><!--END .icon-->
+                                            <div class="advantage-card__text">Прохождение практики в&nbsp;период обучения </div>
+                                        </div>
+                                    </div><!--END .advantage-card-->
+                                </div>
+                                <div class="swiper-slide swiper-slide--advantages">
+                                    <div class="advantage-card advantage-card--employment">
+                                        <div class="advantage-card__image">
+                                            <picture class="picture picture--fit">
+                                                <source srcset="images/advantages/image-8@211w.webp 211w, images/advantages/image-8@421w.webp 421w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 421px" type="image/webp">
+                                                <source srcset="images/advantages/image-8@211w.png 211w, images/advantages/image-8@421w.png 421w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 421px"><img class="picture__image" src="images/advantages/image-8@max.png" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="advantage-card__content">
+                                            <svg class="icon icon--fill advantage-card__icon" width="20" height="36">
+                                                <use xlink:href="images/svg-sprite.svg#arrow-dotted"></use>
+                                            </svg><!--END .icon-->
+                                            <div class="advantage-card__text">Трудоустройство молодых специалистов </div>
+                                        </div>
+                                    </div><!--END .advantage-card-->
+                                </div>
+                                <div class="swiper-slide swiper-slide--advantages">
+                                    <div class="advantage-card advantage-card--education">
+                                        <div class="advantage-card__image">
+                                            <picture class="picture picture--fit">
+                                                <source srcset="images/advantages/image-9@212w.webp 212w, images/advantages/image-9@423w.webp 423w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 423px" type="image/webp">
+                                                <source srcset="images/advantages/image-9@212w.png 212w, images/advantages/image-9@423w.png 423w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 423px"><img class="picture__image" src="images/advantages/image-9@max.png" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="advantage-card__content">
+                                            <svg class="icon icon--fill advantage-card__icon" width="20" height="36">
+                                                <use xlink:href="images/svg-sprite.svg#arrow-dotted"></use>
+                                            </svg><!--END .icon-->
+                                            <div class="advantage-card__text">Обучение на&nbsp;новую профессию </div>
+                                        </div>
+                                    </div><!--END .advantage-card-->
+                                </div>
+                                <div class="swiper-slide swiper-slide--advantages">
+                                    <div class="advantage-card advantage-card--adaptations">
+                                        <div class="advantage-card__image">
+                                            <picture class="picture picture--fit">
+                                                <source srcset="images/advantages/image-10@192w.webp 192w, images/advantages/image-10@382w.webp 382w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 382px" type="image/webp">
+                                                <source srcset="images/advantages/image-10@192w.png 192w, images/advantages/image-10@382w.png 382w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 382px"><img class="picture__image" src="images/advantages/image-10@max.png" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="advantage-card__content">
+                                            <svg class="icon icon--fill advantage-card__icon" width="20" height="36">
+                                                <use xlink:href="images/svg-sprite.svg#arrow-dotted"></use>
+                                            </svg><!--END .icon-->
+                                            <div class="advantage-card__text">Система адаптации и&nbsp;наставничества </div>
+                                        </div>
+                                    </div><!--END .advantage-card-->
+                                </div>
+                                <div class="swiper-slide swiper-slide--advantages">
+                                    <div class="advantage-card advantage-card--directions">
+                                        <div class="advantage-card__image">
+                                            <picture class="picture picture--fit">
+                                                <source srcset="images/advantages/image-11@425w.webp 425w, images/advantages/image-11@408w.webp 408w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 100vw, (max-width: 1440px) 50vw, 408px" type="image/webp">
+                                                <source srcset="images/advantages/image-11@425w.png 425w, images/advantages/image-11@408w.png 408w" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 100vw, (max-width: 1440px) 50vw, 408px"><img class="picture__image" src="images/advantages/image-11@max.png" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="advantage-card__content">
+                                            <svg class="icon icon--fill advantage-card__icon" width="20" height="36">
+                                                <use xlink:href="images/svg-sprite.svg#arrow-dotted"></use>
+                                            </svg><!--END .icon-->
+                                            <div class="advantage-card__text">Возможность работать в&nbsp;разных направлениях от&nbsp;производства до&nbsp;логистики и&nbsp;продаж </div>
+                                        </div>
+                                    </div><!--END .advantage-card-->
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="slider__nav">
+                                <div class="swiper-button-prev">
+                                    <button class="ctrl-button ctrl-button--arrow" type="button">
+                                        <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                            <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#arrow-left"></use>
+                                            </svg><!--END .icon--></span>
+                                    </button><!--END .ctrl-button -->
+                                </div>
+                                <div class="swiper-button-next">
+                                    <button class="ctrl-button ctrl-button--arrow" type="button">
+                                        <span class="ctrl-button__container"><span class="ctrl-button__text"></span>
+
+                                            <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#arrow-left"></use>
+                                            </svg><!--END .icon--></span>
+                                    </button><!--END .ctrl-button -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--END .slider-->
+                </div>
+            </div>
+        </section><!--END .advantages-->
+        <section class="stories">
+            <svg class="decor stories__decor" width="293px" height="516px">
+                <use xlink:href="images/decor-sprite.svg#decor-story"></use>
+            </svg><!--END .decor-->
+            <div class="box">
+                <h2 class="title stories__title">Истории успеха
+                    <svg class="icon title__icon" width="36" height="39">
+                        <use xlink:href="images/svg-sprite.svg#arrow-dots"></use>
+                    </svg><!--END .icon-->
+                </h2><!--END .title-->
+                <div class="tabs tabs--stories js-tabs stories__tabs">
+                    <div class="tabs__nav"> <button class="tabs__nav-item" type="button">Владимир Андреев</button><button class="tabs__nav-item" type="button">Анна Сергиенко</button></div>
+                    <div class="tabs__content">
+                        <div class="tabs__content-item">
+                            <div class="tabs__content-nav">Владимир Андреев</div>
+                            <div class="story">
+                                <div class="story__grid">
+                                    <div class="story__column story__column--profile">
+                                        <div class="profile">
+                                            <picture class="picture picture--fit profile__image">
+                                                <source srcset="images/photos/image-3@656w.webp 656w, images/photos/image-3@832w.webp 832w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 832px" type="image/webp">
+                                                <source srcset="images/photos/image-3@656w.jpg 656w, images/photos/image-3@832w.jpg 832w" sizes="(max-width: 480px) 50vw, (max-width: 1024px) 50vw, (max-width: 1440px) 50vw, 832px"><img class="picture__image" src="images/photos/image-3@max.jpg" loading="lazy">
+                                            </picture>
+                                            <div class="profile__name">Владимир Андреев</div>
+                                            <div class="profile__position">Начальник управления проектных продаж ООО&nbsp;«Верхневолжский СМЦ», г.&nbsp;Иваново</div>
+                                        </div><!--END .profile-->
+                                    </div>
+                                    <div class="story__column story__column--quote">
+                                        <div class="story__group">
+                                            <div class="profile profile--for-device">
+                                                <div class="profile__name">Владимир Андреев</div>
+                                                <div class="profile__position">Начальник управления проектных продаж ООО&nbsp;«Верхневолжский СМЦ», г.&nbsp;Иваново</div>
+                                            </div><!--END .profile-->
+                                            <div class="quote">
+                                                <svg class="icon icon--fill quote__icon quote__icon--start" width="35" height="32">
+                                                    <use xlink:href="images/svg-sprite.svg#quote"></use>
+                                                </svg><!--END .icon-->
+                                                <blockquote class="quote__text">
+                                                    <p>Моя идеология о построении этого мира совпадает с целями и ценностями нашей компании. За 11 лет работы в компании «ДиПОС» я узнал и научился всему, что я умею сейчас, и за это я благодарен нашей компании и её команде! В профессиональном плане я расту вместе с «ДиПОС».</p>
+                                                </blockquote>
+                                                <svg class="icon icon--fill quote__icon quote__icon--end" width="35" height="32">
+                                                    <use xlink:href="images/svg-sprite.svg#quote"></use>
+                                                </svg><!--END .icon-->
+                                            </div><!--END .quote -->
+                                            <div class="audio js-audio story__audio"><audio preload="auto" controls>
+                                                    <source src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3">
+                                                </audio><span class="audio__title">Послушать историю</span></div><!--END .audio -->
+                                        </div>
+                                    </div>
+                                    <div class="story__column story__column--advice">
+                                        <div class="story__group">
+                                            <div class="career-path">
+                                                <h6 class="title title--size-s career-path__title">Карьерный путь </h6><!--END .title-->
+                                                <div class="career-path__list">
+                                                    <div class="career-path__item">
+                                                        <div class="career-path__position">Менеджер по развитию бизнеса</div>
+                                                        <svg class="icon icon--fill career-path__icon" width="11" height="6">
+                                                            <use xlink:href="images/svg-sprite.svg#arrow-down-small"></use>
+                                                        </svg><!--END .icon-->
+                                                    </div>
+                                                    <div class="career-path__item">
+                                                        <div class="career-path__position">Маркетолог</div>
+                                                        <svg class="icon icon--fill career-path__icon" width="11" height="6">
+                                                            <use xlink:href="images/svg-sprite.svg#arrow-down-small"></use>
+                                                        </svg><!--END .icon-->
+                                                    </div>
+                                                    <div class="career-path__item">
+                                                        <div class="career-path__position">Начальник отдела продаж</div>
+                                                        <svg class="icon icon--fill career-path__icon" width="11" height="6">
+                                                            <use xlink:href="images/svg-sprite.svg#arrow-down-small"></use>
+                                                        </svg><!--END .icon-->
+                                                    </div>
+                                                    <div class="career-path__item">
+                                                        <div class="career-path__position">Начальник управления проектных продаж</div>
+                                                    </div>
+                                                </div>
+                                            </div><!--END .career-path -->
+                                            <div class="advice">
+                                                <h6 class="title title--size-s title--green advice__title">Совет новичкам </h6><!--END .title-->
+                                                <div class="advice__text">
+                                                    <p>Брать ответственность на себя, ведь мы растём параллельно нашему уровню ответственности. По‑другому никак. Делайте себя лучше каждый день, каким бы скромным не было ваше ремесло. Вы способны поменять многое. Станьте таким, каким вы хотите видеть этом мир. Ставьте перед собой цели, на которые не хватит и жизни.</p>
+                                                </div>
+                                            </div><!--END .advice -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--END .story-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--END .stories-->
+        <section class="application">
+            <div class="box">
+                <div class="application__box">
+                    <h2 class="title application__title">Анкета соискателя
+                        <svg class="icon title__icon" width="36" height="39">
+                            <use xlink:href="images/svg-sprite.svg#arrow-dots"></use>
+                        </svg><!--END .icon-->
+                    </h2><!--END .title-->
+                    <div class="application__text"><span class="application__text-question">Готовы стать частью команды?</span><span class="application__text-note">Заполните анкету соискателя</span></div>
+                    <div class="form-profile">
+                        <form class="form-profile__form" action="/" method="post">
+                            <div class="form-profile__group">
+                                <div class="form-profile__item is-error"><input class="input form-profile__field" type="text" id="fieldId" placeholder="Имя"><label class="form-profile__label">Имя </label>
+                                    <div class="form-profile__error">Текст ошибки</div>
+                                </div>
+                                <div class="form-profile__item"><input class="input form-profile__field" type="text" id="fieldId" placeholder="Фамилия"><label class="form-profile__label">Фамилия</label></div>
+                            </div>
+                            <div class="form-profile__group">
+                                <div class="form-profile__item"><input class="input form-profile__field" type="text" id="fieldId" placeholder="Телефон"><label class="form-profile__label">Телефон</label></div>
+                                <div class="form-profile__item"><input class="input form-profile__field" type="text" id="fieldId" placeholder="Электронная почта (не обязательно)"><label class="form-profile__label">Электронная почта (не обязательно)</label></div>
+                            </div>
+                            <div class="form-profile__group">
+                                <div class="form-profile__item"><input class="input form-profile__field" type="text" id="fieldId" placeholder="Город проживания"><label class="form-profile__label">Город проживания</label></div>
+                                <div class="form-profile__item"><input class="input form-profile__field" type="text" id="fieldId" placeholder="Желаемая должность"><label class="form-profile__label">Желаемая должность</label></div>
+                            </div>
+                            <div class="form-profile__item"><textarea class="textarea js-textarea form-profile__field" type="text" id="fieldId" placeholder="Учебное заведение и уровень образования"></textarea><label class="form-profile__label">Учебное заведение и уровень образования</label></div>
+                            <div class="form-profile__item"><textarea class="textarea js-textarea form-profile__field" type="text" id="fieldId" placeholder="Опишите свой опыт работы и навыки"></textarea><label class="form-profile__label">Опишите свой опыт работы и навыки</label></div>
+                            <div class="form-profile__item"> <label class="form-profile__label form-profile__label--static">Ваше резюме</label>
+                                <div class="dropzone">
+                                    <div class="dropzone__box">
+                                        <div class="dropzone__info">
+                                            <button class="ctrl-button dropzone__button" type="button">
+                                                <span class="ctrl-button__container"><span class="ctrl-button__text">Выберите файл</span>
+
+                                                    <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                                                        <use xlink:href="images/svg-sprite.svg#attach"></use>
+                                                    </svg><!--END .icon--></span>
+                                            </button><!--END .ctrl-button --><span class="dropzone__info-text">или перетащите резюме сюда</span>
+                                        </div>
+                                        <div class="dropzone__format">(pdf,doc,docx) Не более 10МБ</div><input class="dropzone__input" type="file" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-profile__item form-profile__item--note"> <label class="checkbox form-profile__checkbox"><span class="checkbox__box"><input class="checkbox__control" type="checkbox" value=""><span class="checkbox__icon">
+                                            <svg class="icon icon--stroke" width="8" height="6">
+                                                <use xlink:href="images/svg-sprite.svg#check"></use>
+                                            </svg><!--END .icon--></span><span class="checkbox__text">Отправляя анкету, я соглашаюсь с <a href='#3'>политикой конфиденциальности</a> и даю согласие на обработку <a href='#3'>персональных данных.</a></span></span></label><!--END .checkbox--></div>
+                            <div class="form-profile__item form-profile__item--button">
+                                <button class="ctrl-button ctrl-button--color-red form-profile__button js-popup-open-link is-disabled" type="button" data-popup="popup-form-message">
+                                    <span class="ctrl-button__container"><span class="ctrl-button__text">Отправить анкету</span>
+                                    </span>
+                                </button><!--END .ctrl-button -->
+                            </div>
+                        </form>
+                    </div><!--END .form-profile-->
+                </div>
+            </div>
+        </section><!--END .application-->
+    </main>
+    <footer class="footer">
+        <div class="box">
+            <div class="footer__group">
+                <div class="footer__logo"><a class="logo" href="home.html">
+                        <picture class="logo__image picture">
+                            <source srcset="images/logo/logo.svg" media="(min-width: 768px)">
+                            <source srcset="images/logo/logo@mobile.svg" media="(max-width: 767px)"><img class="picture__image" src="images/logo/logo.svg" alt="ДиПОС">
+                        </picture><span class="logo__name">ДиПОС</span>
+                    </a><!--END .logo--></div>
+                <div class="social footer__social">
+                    <div class="social__text">Подписывайся на «ДиПОС» в социальных сетях</div>
+                    <div class="social__group"><a class="social__item" href="#33" target="_blank" rel="nofollow noopener noreferrer"><span class="social__item-text">ДиПОС на VK</span>
+                            <svg class="icon icon--fill social__icon" width="32" height="32">
+                                <use xlink:href="images/svg-sprite.svg#vk"></use>
+                            </svg><!--END .icon--></a><a class="social__item" href="#33" target="_blank" rel="nofollow noopener noreferrer"><span class="social__item-text">ДиПОС в Telegram</span>
+                            <svg class="icon icon--fill social__icon" width="32" height="32">
+                                <use xlink:href="images/svg-sprite.svg#telegram"></use>
+                            </svg><!--END .icon--></a><a class="social__item" href="#33" target="_blank" rel="nofollow noopener noreferrer"><span class="social__item-text">ДиПОС на Youtube</span>
+                            <svg class="icon icon--fill social__icon" width="32" height="32">
+                                <use xlink:href="images/svg-sprite.svg#youtube"></use>
+                            </svg><!--END .icon--></a><a class="social__item" href="#33" target="_blank" rel="nofollow noopener noreferrer"><span class="social__item-text">ДиПОС на Rutube</span>
+                            <svg class="icon icon--fill social__icon" width="32" height="32">
+                                <use xlink:href="images/svg-sprite.svg#rutube"></use>
+                            </svg><!--END .icon--></a></div>
+                </div><!--END .social-->
+                <a class="ctrl-button ctrl-button--color-red-border footer__button" href="#42">
+                    <span class="ctrl-button__container"><span class="ctrl-button__text">Показать больше вакансий</span>
+
+                        <svg class="icon icon--stroke ctrl-button__icon" width="24" height="24">
+                            <use xlink:href="images/svg-sprite.svg#arrow-right"></use>
+                        </svg><!--END .icon--></span>
+                </a><!--END .ctrl-button -->
+            </div>
+            <div class="footer__group">
+                <div class="footer__links"> <a class="footer__links-item" href="#">Политика конфиденциальности</a><a class="footer__links-item" href="#">Соглашение об обработке персональных данных</a></div>
+                <div class="footer__copy">
+                    <p>&copy; 2024 Все права защищены. ООО «ПКФ&nbsp;«ДиПОС»</p>
+                </div>
+            </div>
+        </div><!-- .box-->
+    </footer><!--END .footer--><!--include ../../_blocks/cookie/cookie.pug-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"> </script>
+    <script src="scripts/clean-audio-player/js/audioplayer.js"> </script>
+    <script src="scripts/autosize/autosize.min.js"></script>
+    <script src="scripts/common.js"></script>
+</body>
+
+</html>

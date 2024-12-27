@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>ДиПОС</title>
+    <style>
+        /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+        html {
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            margin: 0
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: .67em 0
+        }
+
+        hr {
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible
+        }
+
+        pre {
+            font-family: monospace, monospace;
+            font-size: 1em
+        }
+
+        a {
+            background-color: transparent
+        }
+
+        abbr[title] {
+            border-bottom: none;
+            text-decoration: underline;
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted
+        }
+
+        b,
+        strong {
+            font-weight: bolder
+        }
+
+        code,
+        kbd,
+        samp {
+            font-family: monospace, monospace;
+            font-size: 1em
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        img {
+            border-style: none
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: 1.15;
+            margin: 0
+        }
+
+        button,
+        input {
+            overflow: visible
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        [type=button],
+        [type=reset],
+        [type=submit],
+        button {
+            -webkit-appearance: button
+        }
+
+        [type=button]::-moz-focus-inner,
+        [type=reset]::-moz-focus-inner,
+        [type=submit]::-moz-focus-inner,
+        button::-moz-focus-inner {
+            border-style: none;
+            padding: 0
+        }
+
+        [type=button]:-moz-focusring,
+        [type=reset]:-moz-focusring,
+        [type=submit]:-moz-focusring,
+        button:-moz-focusring {
+            outline: 1px dotted ButtonText
+        }
+
+        fieldset {
+            padding: .35em .75em .625em
+        }
+
+        legend {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: inherit;
+            display: table;
+            max-width: 100%;
+            padding: 0;
+            white-space: normal
+        }
+
+        progress {
+            vertical-align: baseline
+        }
+
+        textarea {
+            overflow: auto
+        }
+
+        [type=checkbox],
+        [type=radio] {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0
+        }
+
+        [type=number]::-webkit-inner-spin-button,
+        [type=number]::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        [type=search] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+
+        [type=search]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        details {
+            display: block
+        }
+
+        summary {
+            display: list-item
+        }
+
+        [hidden],
+        template {
+            display: none
+        }
+
+        /*! Reset indents */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ol,
+        p,
+        ul {
+            margin-top: 0;
+            margin-bottom: 0
+        }
+
+        ol,
+        ul {
+            padding-left: 0
+        }
+
+        figure {
+            margin: 0
+        }
+
+        button {
+            cursor: pointer
+        }
+
+        button[disabled] {
+            cursor: default
+        }
+
+        /*! Styles */
+        @font-face {
+            font-family: PlumbC;
+            src: url(../fonts/PlumbC-Bold.woff2) format("woff2"), url(../fonts/PlumbC-Bold.woff) format("woff"), url(../fonts/PlumbC-Bold.ttf) format("truetype");
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap
+        }
+
+        @font-face {
+            font-family: PlumbC;
+            src: url(../fonts/PlumbBlackC.woff2) format("woff2"), url(../fonts/PlumbBlackC.woff) format("woff"), url(../fonts/PlumbBlackC.ttf) format("truetype");
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap
+        }
+
+        @font-face {
+            font-family: PlumbC;
+            src: url(../fonts/PlumbC.woff2) format("woff2"), url(../fonts/PlumbC.woff) format("woff"), url(../fonts/PlumbC.ttf) format("truetype");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap
+        }
+
+        @font-face {
+            font-family: PlumbC;
+            src: url(../fonts/PlumbLightC.woff2) format("woff2"), url(../fonts/PlumbLightC.woff) format("woff"), url(../fonts/PlumbLightC.ttf) format("truetype");
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap
+        }
+
+        @font-face {
+            font-family: PlumbC;
+            src: url(../fonts/PlumbMediumC.woff2) format("woff2"), url(../fonts/PlumbMediumC.woff) format("woff"), url(../fonts/PlumbMediumC.ttf) format("truetype");
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap
+        }
+
+        :root {
+            font-size: 16px;
+            line-height: 1.2;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        .page,
+        :root {
+            font-weight: 400;
+            font-family: PlumbC, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif
+        }
+
+        .page {
+            color: #262727;
+            background-color: #fff;
+            overflow-x: hidden
+        }
+
+        .page:after {
+            position: absolute;
+            clip: rect(0 0 0 0);
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            border: 0;
+            margin: -1px;
+            overflow: hidden;
+            content: "XL"
+        }
+
+        .page a[href^="tel:"] {
+            color: inherit;
+            text-decoration: none
+        }
+
+        .box {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 1342px
+        }
+
+        .title {
+            font-weight: 300;
+            font-size: 1.75rem;
+            line-height: 1.17857;
+            color: #474b4c;
+            text-transform: uppercase
+        }
+
+        .title--size-xl {
+            font-size: 4rem;
+            line-height: 1.09375;
+            font-weight: 700;
+            text-transform: none;
+            color: inherit
+        }
+
+        .title--size-m {
+            font-size: 1.5rem;
+            line-height: 1.2;
+            color: inherit;
+            font-family: PlumbC, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif
+        }
+
+        .title--size-s {
+            font-size: 1.125rem;
+            line-height: 1.2;
+            color: inherit
+        }
+
+        .title--red {
+            color: #c31830
+        }
+
+        .title--green {
+            color: #27918c
+        }
+
+        .title__icon {
+            margin-top: -0.25rem;
+            margin-left: 1.25rem;
+            -ms-flex-negative: 0;
+            flex-shrink: 0
+        }
+
+        .icon {
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        .icon--fill {
+            fill: currentcolor
+        }
+
+        .icon--stroke {
+            stroke: currentcolor;
+            fill: none
+        }
+
+        .ctrl-button {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0.75rem 1.125rem;
+            font-size: 1.125rem;
+            line-height: 1;
+            text-align: center;
+            font-weight: 400;
+            font-family: PlumbC, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+            white-space: nowrap;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border-radius: 0.25rem;
+            border: none;
+            text-decoration: none;
+            background-color: #f1f2f2;
+            color: #262727;
+            -webkit-transition-property: background-color, color;
+            -o-transition-property: background-color, color;
+            transition-property: background-color, color;
+            -webkit-transition-duration: .25s;
+            -o-transition-duration: .25s;
+            transition-duration: .25s;
+            -webkit-transition-timing-function: ease;
+            -o-transition-timing-function: ease;
+            transition-timing-function: ease
+        }
+
+        .bx-no-touch .ctrl-button:hover {
+            background-color: #db8d05;
+            color: #fafafa
+        }
+
+        .ctrl-button:focus {
+            outline: none
+        }
+
+        .ctrl-button:active {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            outline: none
+        }
+
+        .ctrl-button__container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+
+        .ctrl-button__icon {
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            margin-left: 0.375rem
+        }
+
+        .ctrl-button--color-red {
+            background-color: #c31830;
+            color: #f1f2f2
+        }
+
+        .bx-no-touch .ctrl-button--color-red:hover {
+            background-color: #a30026;
+            color: #f1f2f2
+        }
+
+        .ctrl-button--color-red.is-disabled,
+        .ctrl-button--color-red:disabled {
+            color: #ec7570;
+            pointer-events: none
+        }
+
+        .ctrl-button--color-transparent {
+            color: #000;
+            background: transparent
+        }
+
+        .bx-no-touch .ctrl-button--color-transparent:hover {
+            color: #fff
+        }
+
+        .ctrl-button--color-red-border {
+            background: #fff;
+            color: #c31830;
+            border: 2px solid #c31830;
+            border-radius: 0.5rem;
+            padding-top: 0.625rem;
+            padding-bottom: 0.625rem
+        }
+
+        .bx-no-touch .ctrl-button--color-red-border:hover {
+            color: #fafafa;
+            background: #c31830
+        }
+
+        .ctrl-button--icon-only {
+            background: transparent;
+            border: none;
+            padding: 0;
+            color: #000;
+            padding: 0.25rem
+        }
+
+        .bx-no-touch .ctrl-button--icon-only:hover {
+            background: transparent;
+            color: #444
+        }
+
+        .ctrl-button--icon-only .ctrl-button__icon {
+            margin-left: 0
+        }
+
+        .ctrl-button--arrow {
+            color: #262727;
+            border-color: none;
+            background-color: #f1f2f2;
+            border-radius: 0.25rem;
+            padding: 0.75rem 1.1875rem;
+            width: 6.25rem;
+            height: 3rem;
+            -webkit-transition-property: width;
+            -o-transition-property: width;
+            transition-property: width
+        }
+
+        .bx-no-touch .ctrl-button--arrow:hover {
+            background-color: #f1f2f2;
+            color: #c31830
+        }
+
+        .info-error {
+            text-align: center;
+            min-height: 100vh;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        .info-error--cropped {
+            min-height: calc(100vh - 240px)
+        }
+
+        .info-error--cropped .info-error__box {
+            padding-top: 3.75rem
+        }
+
+        .info-error--wider .info-error__box {
+            max-width: 28.125rem
+        }
+
+        .info-error__box {
+            max-width: 22.5rem;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .info-error__content * {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem
+        }
+
+        .info-error__content :first-child {
+            margin-top: 0
+        }
+
+        .info-error__content :last-child {
+            margin-bottom: 0
+        }
+
+        .info-error__type {
+            color: #c31830;
+            font-weight: 700;
+            font-size: 4rem;
+            line-height: 1
+        }
+
+        .info-error__title {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 1.3;
+            text-transform: none
+        }
+
+        .info-error__text {
+            font-size: 1.125rem;
+            line-height: 1.2
+        }
+
+        .info-error__action {
+            margin-top: 1.5rem
+        }
+
+        .info-error__button {
+            padding-top: 0.875rem;
+            padding-bottom: 0.875rem
+        }
+
+        @media (max-width:1420px) {
+            .page:after {
+                content: "L"
+            }
+
+            .box {
+                width: 960px
+            }
+        }
+
+        @media (max-width:990px) {
+            .page {
+                padding-top: 3.75rem
+            }
+
+            .page:after {
+                content: "M"
+            }
+
+            .box {
+                width: 720px
+            }
+
+            .title {
+                font-size: 1.25rem;
+                line-height: 1.4
+            }
+
+            .title--size-xl {
+                font-size: 4rem;
+                line-height: 1.09375
+            }
+
+            .info-error {
+                margin-top: -3.75rem
+            }
+
+            .info-error--cropped {
+                min-height: calc(100vh - 498px);
+                margin-top: 0
+            }
+
+            .info-error--cropped .info-error__box,
+            .info-error__box {
+                padding-top: 1.875rem
+            }
+
+            .info-error__box {
+                padding-bottom: 1.875rem
+            }
+
+            .info-error__content {
+                color: #101936
+            }
+
+            .info-error__type {
+                font-size: 2.625rem;
+                line-height: 1.3
+            }
+
+            .info-error__title {
+                font-size: 1.25rem;
+                line-height: 1.4
+            }
+
+            .info-error__text {
+                font-size: 1rem;
+                line-height: 1.3;
+                padding-left: 1.25rem;
+                padding-right: 1.25rem
+            }
+        }
+
+        @media (max-width:767px) {
+            .page:after {
+                content: "S"
+            }
+
+            .box {
+                width: 540px
+            }
+
+            .title {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between
+            }
+
+            .title--size-xl {
+                font-size: 2.625rem;
+                line-height: 1.30952
+            }
+
+            .info-error--cropped {
+                min-height: auto
+            }
+
+            .info-error--cropped .info-error__box {
+                padding-top: 3rem
+            }
+
+            .info-error__box {
+                padding-top: 3rem;
+                padding-bottom: 3rem
+            }
+
+            .info-error__title {
+                display: block
+            }
+
+            .info-error__button {
+                width: 100%
+            }
+        }
+
+        @media (max-width:576px) {
+            .page:after {
+                content: "XS"
+            }
+
+            .box {
+                width: 100%;
+                min-width: 320px;
+                max-width: 480px
+            }
+        }
+
+    </style>
+</head>
+
+<body class="page">
+    <main class="main">
+        <section class="info-error info-error--wider">
+            <div class="box">
+                <div class="info-error__box">
+                    <div class="info-error__content">
+                        <div class="info-error__type">500</div>
+                        <h2 class="title info-error__title">Ошибка сервера </h2><!--END .title-->
+                        <div class="info-error__text">Мы уже устраняем неисправность. Попробуйте обновить страницу через некоторое время</div>
+                    </div>
+                    <div class="info-error__action">
+                        <a class="ctrl-button ctrl-button--color-red info-error__button" href="#42">
+                            <span class="ctrl-button__container"><span class="ctrl-button__text">Обновить страницу</span>
+                            </span>
+                        </a><!--END .ctrl-button -->
+                    </div>
+                </div>
+            </div>
+        </section><!--END .info-error-->
+    </main>
+</body>
+
+</html>
