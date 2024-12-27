@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'PlumbBlackSoftC';
+    src: url('PlumbBlackSoftC.eot');
+    src: local('PlumbBlackSoftC'),
+        url('PlumbBlackSoftC.eot?#iefix') format('embedded-opentype'),
+        url('PlumbBlackSoftC.woff2') format('woff2'),
+        url('PlumbBlackSoftC.woff') format('woff'),
+        url('PlumbBlackSoftC.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlumbC';
+    src: url('PlumbC-Bold.eot');
+    src: local('PlumbC Bold'), local('PlumbC-Bold'),
+        url('PlumbC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('PlumbC-Bold.woff2') format('woff2'),
+        url('PlumbC-Bold.woff') format('woff'),
+        url('PlumbC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlumbBlackC';
+    src: url('PlumbBlackC.eot');
+    src: local('PlumbBlackC'),
+        url('PlumbBlackC.eot?#iefix') format('embedded-opentype'),
+        url('PlumbBlackC.woff2') format('woff2'),
+        url('PlumbBlackC.woff') format('woff'),
+        url('PlumbBlackC.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlumbC';
+    src: url('PlumbC.eot');
+    src: local('PlumbC'),
+        url('PlumbC.eot?#iefix') format('embedded-opentype'),
+        url('PlumbC.woff2') format('woff2'),
+        url('PlumbC.woff') format('woff'),
+        url('PlumbC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlumbLightC';
+    src: url('PlumbLightC.eot');
+    src: local('PlumbLightC'),
+        url('PlumbLightC.eot?#iefix') format('embedded-opentype'),
+        url('PlumbLightC.woff2') format('woff2'),
+        url('PlumbLightC.woff') format('woff'),
+        url('PlumbLightC.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlumbMediumC';
+    src: url('PlumbMediumC.eot');
+    src: local('PlumbMediumC'),
+        url('PlumbMediumC.eot?#iefix') format('embedded-opentype'),
+        url('PlumbMediumC.woff2') format('woff2'),
+        url('PlumbMediumC.woff') format('woff'),
+        url('PlumbMediumC.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
